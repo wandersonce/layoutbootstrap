@@ -1,0 +1,52 @@
+@import url("normalize.css");
+
+$navcolor: #FFC107;
+$containercolor: #FFF9C4;
+@mixin fakeimgsize {
+    width: 150px;
+}
+
+body{
+    background-color: $containercolor;
+}
+.jumbotron{
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    overflow: hidden;
+    height: 250px;
+
+    #hd_h1 {
+        font-size: 80px;
+        color: white;
+        text-shadow: 3px 2px black; 
+    };
+
+   
+}
+
+.footer{
+    height: 100px;
+}
+
+nav {
+    background-color: $navcolor;
+    .navbar-brand:hover{
+          color: red;       
+    }
+    .nav-link{
+        color: white;   
+    }
+    .nav-link:hover{
+        color: red;
+    }
+    
+}
+.container{
+   
+    .fakeimg{
+       @include fakeimgsize()
+    }
+    
+}
+
